@@ -4,6 +4,19 @@ import './App.css'
 
 function App() {
 
+  return (
+    <div className="App">
+
+<Shopping />
+
+   </div>    
+  )
+}
+
+export default App
+
+function Shopping(){
+
     const[Add1, setAdd1]=useState(false);
     const[Add2, setAdd2]=useState(false);
     const[Add3, setAdd3]=useState(false);
@@ -11,16 +24,14 @@ function App() {
     const[Add5, setAdd5]=useState(false);
     const[Add6, setAdd6]=useState(false);
 
-    const [Cart,setCart]=useState(true)
-
     
+    const hangleToggle = ()=>{setAdd1(false), setAdd2(false), setAdd3(false), setAdd4(false), setAdd5(false), setAdd6(false)};
 
-    
-
-  return (
-    <div className="App">
-           {/* <!-- Navigation--> */}
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    return(
+        <>
+        
+            {/* <!-- Navigation--> */}
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container px-4 px-lg-5">
                 <a className="navbar-brand" href="#!">Start Bootstrap</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
@@ -39,7 +50,7 @@ function App() {
                         </li>
                     </ul>
                     <form className="d-flex">
-                        <button className="btn btn-outline-dark" type="submit" onClick={()=>setCart(!Cart)}>
+                        <button className="btn btn-outline-dark" type="submit" onClick={()=>hangleToggle()}>
                             <i className="bi-cart-fill me-1"></i>
                             Cart
                             <span className="badge bg-dark text-white ms-1 rounded-pill">{+Add1 +Add2 +Add3 +Add4 +Add5 +Add6}</span>
@@ -271,9 +282,8 @@ function App() {
             <div className="container"><p className="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
         </footer>
         
-    </div>
-  )
+    
+
+        </>
+    )
 }
-
-export default App
-
