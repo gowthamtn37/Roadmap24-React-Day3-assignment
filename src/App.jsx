@@ -24,7 +24,7 @@ function Shopping(){
     const[Add5, setAdd5]=useState(false);
     const[Add6, setAdd6]=useState(false);
 
-    
+
     const hangleToggle = ()=>{setAdd1(false), setAdd2(false), setAdd3(false), setAdd4(false), setAdd5(false), setAdd6(false)};
 
     return(
@@ -50,7 +50,7 @@ function Shopping(){
                         </li>
                     </ul>
                     <form className="d-flex">
-                        <button className="btn btn-outline-dark" type="submit" onClick={()=>hangleToggle()}>
+                        <button className="btn btn-warning" type="submit" onClick={()=>hangleToggle()}>
                             <i className="bi-cart-fill me-1"></i>
                             Cart
                             <span className="badge bg-dark text-white ms-1 rounded-pill">{+Add1 +Add2 +Add3 +Add4 +Add5 +Add6}</span>
@@ -87,7 +87,7 @@ function Shopping(){
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <div className="text-center"><a className="btn btn-info" href="#">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -117,8 +117,8 @@ function Shopping(){
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                              { !Add1 ? <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>setAdd1(!Add1)}  href="#">Add to cart</a></div>:
-                               <div className="text-center"><a className="btn btn-outline-dark mt-auto disabled"  href="#">Add to cart</a></div>}
+                              { !Add1 ? <div className="text-center"><a className="btn btn-success" onClick={()=>setAdd1(!Add1)}  href="#">Add to cart</a></div>:
+                               <div className="text-center"><a className="btn btn-danger"  href="#">Add to cart</a></div>}
                             </div>
                         </div>
                     </div>
@@ -140,8 +140,8 @@ function Shopping(){
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            { !Add2 ? <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>setAdd2(!Add2)}  href="#">Add to cart</a></div>:
-                               <div className="text-center"><a className="btn btn-outline-dark mt-auto disabled"  href="#">Add to cart</a></div>}
+                            { !Add2 ? <div className="text-center"><a className="btn btn-success" onClick={()=>setAdd2(!Add2)}  href="#">Add to cart</a></div>:
+                               <div className="text-center"><a className="btn btn-danger"  href="#">Add to cart</a></div>}
                             </div>
                         </div>
                     </div>
@@ -168,8 +168,8 @@ function Shopping(){
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            { !Add3 ? <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>setAdd3(!Add3)}  href="#">Add to cart</a></div>:
-                               <div className="text-center"><a className="btn btn-outline-dark mt-auto disabled"  href="#">Add to cart</a></div>}
+                            { !Add3 ? <div className="text-center"><a className="btn btn-success" onClick={()=>setAdd3(!Add3)}  href="#">Add to cart</a></div>:
+                               <div className="text-center"><a className="btn btn-danger"  href="#">Add to cart</a></div>}
                             </div>
                         </div>
                     </div>
@@ -191,8 +191,8 @@ function Shopping(){
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            { !Add4 ? <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>setAdd4(!Add4)}  href="#">Add to cart</a></div>:
-                               <div className="text-center"><a className="btn btn-outline-dark mt-auto disabled"  href="#">Add to cart</a></div>}
+                            { !Add4 ? <div className="text-center"><a className="btn btn-success" onClick={()=>setAdd4(!Add4)}  href="#">Add to cart</a></div>:
+                               <div className="text-center"><a className="btn btn-danger"  href="#">Add to cart</a></div>}
                             </div>
                         </div>
                     </div>
@@ -211,7 +211,7 @@ function Shopping(){
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div className="text-center"><a className="btn btn-outline-dark mt-auto"  href="#">View options</a></div>
+                                <div className="text-center"><a className="btn btn-info"  href="#">View options</a></div>
                             </div>
                         </div>
                     </div>
@@ -241,8 +241,8 @@ function Shopping(){
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            { !Add5 ? <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>setAdd5(!Add5)}  href="#">Add to cart</a></div>:
-                               <div className="text-center"><a className="btn btn-outline-dark mt-auto disabled"  href="#">Add to cart</a></div>}
+                            { !Add5 ? <div className="text-center"><a className="btn btn-success" onClick={()=>setAdd5(!Add5)}  href="#">Add to cart</a></div>:
+                               <div className="text-center"><a className="btn btn-danger"  href="#">Add to cart</a></div>}
                             </div>
                         </div>
                     </div>
@@ -269,8 +269,8 @@ function Shopping(){
                             </div>
                             {/* <!-- Product actions--> */}
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            { !Add6 ? <div className="text-center"><a className="btn btn-outline-dark mt-auto" onClick={()=>setAdd6(!Add6)}  href="#">Add to cart</a></div>:
-                               <div className="text-center"><a className="btn btn-outline-dark mt-auto disabled"  href="#">Add to cart</a></div>}
+                            { !Add6 ? <div className="text-center"><a className="btn btn-success" onClick={()=>setAdd6(!Add6)}  href="#">Add to cart</a></div>:
+                               <div className="text-center"><a className="btn btn-danger"  href="#">Add to cart</a></div>}
                             </div>
                         </div>
                     </div>
